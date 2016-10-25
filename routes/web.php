@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function() {
+    return view('home');
+	});
+
+Route::get('/users', 'UserController@index')->name('users.index');
+Route::get('/text', 'TextController@index')->name('text.index');
+Route::post('/users', 'UserController@generate')->name('users.generate');
+Route::post('/text', 'TextController@generate')->name('text.generate');
+
