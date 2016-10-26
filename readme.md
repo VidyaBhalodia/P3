@@ -1,3 +1,17 @@
+
+
+# Additional Package Used :
+https://github.com/joshtronic/php-loremipsum 
+allows me to specify the number of lorem ipsum words, sentences and/or paragraphs. This package was used to generate the Lorem Ipsum Text paragraphs.
+
+# Other Resources Used : 
+The random name generator was built by pulling names randomly from a list of first and last names.
+First Name List : http://scrapmaker.com/download/data/wordlists/names/Given-Names(8,608).txt
+Last Name List : http://scrapmaker.com/data/wordlists/names/surnames.txt
+
+
+This Project was built using Laravel - See Laravel Information Below
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)

@@ -1,6 +1,5 @@
 @extends('layouts.master')
 
-    <section>
 	
 		@section('content')
 			<h1> Generate Random Text</h1>
@@ -11,7 +10,6 @@
 				<input type='submit' value='Generate Text'>
 			</form>
 			
-			{{ $output or '' }}
+			{!! $output or '' !!}
 
 		@stop
-    </section>
