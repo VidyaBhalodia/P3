@@ -14,7 +14,9 @@ class UserController extends Controller
     	}
 		public function generate(Request $request)
 		{
-			$numberUsers = $_POST['users'];
+			$this->validate($request, ['numberUsers' => 'required|integer|min:1|max:30',]);
+		
+			$numberUsers = $_POST['numberUsers'];
 			$userString = '<br>';
 			$firstNameFile = file('http://scrapmaker.com/data/wordlists/names/Given-Names(8,608).txt', FILE_IGNORE_NEW_LINES);
 			$firstNameSize = count($firstNameFile);		
@@ -25,5 +27,4 @@ class UserController extends Controller
 			}
 			return view('users')->with('output', $userString);
 		}	
-
 	}
