@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 	@section('content')
-		<h1> Generate Random Text</h1>
+		<h2> Generate Random Text</h2>
 		
 		<p>You can create up to 15 paragraphs of lorem ipsum text.</p> 
 		<form method='POST' action='/text'>
